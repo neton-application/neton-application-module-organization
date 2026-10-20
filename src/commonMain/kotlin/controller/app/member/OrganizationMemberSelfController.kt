@@ -39,7 +39,7 @@ data class RemoveMemberReq(
  * 路由前缀 /app/org/member。"添加子账号"= 把一个已存在的 account 纳入组织并赋予成员角色，
  * 不是新造账号类型（账号本体由 module-account 负责）。读=成员；增删改角色=至少 ADMIN。
  */
-@Controller("/app/org/member")
+@Controller("/org/member")
 class OrganizationMemberSelfController(
     private val memberLogic: OrganizationMemberLogic,
     private val directory: OrganizationDirectory,

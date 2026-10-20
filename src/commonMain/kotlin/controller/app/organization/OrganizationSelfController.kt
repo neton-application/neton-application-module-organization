@@ -52,7 +52,7 @@ data class JoinOrgReq(
  * 遵循 module-template-spec §4.1）。权限模型：读=有效成员；写资料/停用/改成员=至少 ADMIN；
  * 删除=OWNER。鉴权统一走注入的 [OrganizationDirectory] 端口。
  */
-@Controller("/app/org")
+@Controller("/org")
 class OrganizationSelfController(
     private val organizationLogic: OrganizationLogic,
     private val memberLogic: logic.OrganizationMemberLogic,
