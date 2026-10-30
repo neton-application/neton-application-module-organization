@@ -1,0 +1,30 @@
+{
+  "release": "1.0.0-beta",
+  "module": "organization",
+  "fresh_install_only": true,
+  "dependencies": [
+    "system",
+    "infra",
+    "account"
+  ],
+  "baseline": [
+    {
+      "file": "V001__schema.sql",
+      "sha256": "1d765b479cea3a1160ab8e0d6a6077fdd55a94611576a97f15bab572cb49f482"
+    },
+    {
+      "file": "V002__data.sql",
+      "sha256": "0951124baa88394d1ea42c8c298899b75e74ca9145a47070bcf12c42a9401c50"
+    }
+  ],
+  "superseded": [
+    {
+      "name": "V001__organization_baseline.sql",
+      "sha256": "2631ad146c1c93ffb92e808e93283024adb13dd166d3c023c1ea61b0029f6913"
+    },
+    {
+      "name": "V002__organization_menus.sql",
+      "sha256": "306b15763cf6d2840526e8d6b7e9936d5bc1dad500953666585f3816b176c01c"
+    }
+  ]
+}
